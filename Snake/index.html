@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Змейка</h1>
+        
+        <div class="score-board">
+            <div class="current-score">Очки: <span id="score">0</span></div>
+            <div class="best-score" id="bestScoreContainer">Рекорд: <span id="bestScore">0</span></div>
+        </div>
+        
+        <div class="game-board" id="gameBoard"></div>
+        
+        <div class="start-hint" id="startHint">
+            <h3>Нажмите чтобы начать</h3>
+            <p>Кликните на игровое поле для старта</p>
+            <p>Управление: стрелки</p>
+        </div>
+        
+        <div class="controls">
+            <button class="restart-btn" id="restartBtn">Начать заново</button>
+        </div>
+        
+        <div class="game-over" id="gameOver">
+            <h2>Игра окончена!</h2>
+            <p>Ваш результат: <span id="finalScore">0</span></p>
+            <button class="restart-btn" id="gameOverRestartBtn">Играть снова</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
